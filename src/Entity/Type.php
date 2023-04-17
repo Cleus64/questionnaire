@@ -2,11 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\TypeRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\TypeRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: TypeRepository::class)]
 class Type
@@ -17,6 +18,7 @@ class Type
     private ?int $id = null;
 
     #[ORM\Column(type: Types::TEXT)]
+    #[Groups('quiz')]
     private ?string $type = null;
 
     #[ORM\OneToMany(mappedBy: 'type', targetEntity: Questions::class, orphanRemoval: true)]

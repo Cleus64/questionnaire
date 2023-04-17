@@ -16,14 +16,16 @@ class Reponses
     private ?int $id = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Groups('quiz')]
     private ?string $texte = null;
 
 
     #[ORM\ManyToOne(inversedBy: 'reponses')]
     #[ORM\JoinColumn(nullable: false)]
-    #[Groups('quiz')]
     private ?Questions $question = null;
+
+    #[ORM\ManyToOne(inversedBy: 'reponses')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
 
     public function getId(): ?int
     {
@@ -51,6 +53,18 @@ class Reponses
     public function setQuestion(?Questions $question): self
     {
         $this->question = $question;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

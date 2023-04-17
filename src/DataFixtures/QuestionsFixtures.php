@@ -63,7 +63,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
     public function load(ObjectManager $manager): void
     {
         $question = new Questions();
-        $question->setIntitule('Connaissez-vous le calendrier d\'application des mesures de dématérialisation ?');
+        $question->setLibelle('Connaissez-vous le calendrier d\'application des mesures de dématérialisation ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -71,7 +71,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_1, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous déjà engagé une démarche pour l\'échéance de juin 2024 ?');
+        $question->setLibelle('Avez-vous déjà engagé une démarche pour l\'échéance de juin 2024 ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -79,7 +79,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_2, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous confiant en votre capacité à assurer cette transition ?');
+        $question->setLibelle('Etes-vous confiant en votre capacité à assurer cette transition ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -87,7 +87,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_3, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous accompagné pour cette transformation ?');
+        $question->setLibelle('Etes-vous accompagné pour cette transformation ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -95,7 +95,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_4, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous les ressources internes pour mener à bien les chantiers de transformation ?');
+        $question->setLibelle('Avez-vous les ressources internes pour mener à bien les chantiers de transformation ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -103,7 +103,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_5, $question);
 
         $question = new Questions();
-        $question->setIntitule('Comprenez-vous la différence entre PPF, OD, PDP ?');
+        $question->setLibelle('Comprenez-vous la différence entre PPF, OD, PDP ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -111,7 +111,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_6, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous déjà procédé à une circularisation de vos clients et fournisseurs ?');
+        $question->setLibelle('Avez-vous déjà procédé à une circularisation de vos clients et fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -119,7 +119,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_7, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous un expert-comptable ?');
+        $question->setLibelle('Avez-vous un expert-comptable ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PREAMBULE));
@@ -127,7 +127,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_8, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous connaissance des différentes alternatives disponibles ?');
+        $question->setLibelle('Avez-vous connaissance des différentes alternatives disponibles ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::ANALYSE));
@@ -135,7 +135,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_9, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous prêts à vous faire accompagner par un cabinet pour la mise en place du process ?');
+        $question->setLibelle('Etes-vous prêts à vous faire accompagner par un cabinet pour la mise en place du process ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::ANALYSE));
@@ -143,7 +143,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_10, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous confiants dans votre éditeur de logiciel de gestion pour mener à bien cette mise en place ?');
+        $question->setLibelle('Etes-vous confiants dans votre éditeur de logiciel de gestion pour mener à bien cette mise en place ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::ANALYSE));
@@ -151,7 +151,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_11, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous une idée des travaux préparatoires à effectuer avant cette date ?');
+        $question->setLibelle('Avez-vous une idée des travaux préparatoires à effectuer avant cette date ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::ANALYSE));
@@ -159,7 +159,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_12, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous certain que vos factures présentent les mentions légales obligatoires ?');
+        $question->setLibelle('Etes-vous certain que vos factures présentent les mentions légales obligatoires ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::ANALYSE));
@@ -167,7 +167,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_13, $question);
 
         $question = new Questions();
-        $question->setIntitule('Quel logiciel de facturation utilisez-vous ?');
+        $question->setLibelle('Quel logiciel de facturation utilisez-vous ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE3));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -175,7 +175,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_14, $question);
 
         $question = new Questions();
-        $question->setIntitule('Quel logiciel de comptabilité utilisez-vous ?');
+        $question->setLibelle('Quel logiciel de comptabilité utilisez-vous ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE3));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -183,7 +183,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_15, $question);
 
         $question = new Questions();
-        $question->setIntitule('Emettez-vous des factures en B2B ?');
+        $question->setLibelle('Emettez-vous des factures en B2B ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -191,7 +191,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_16, $question);
 
         $question = new Questions();
-        $question->setIntitule('Emettez-vous des factures en B2C ?');
+        $question->setLibelle('Emettez-vous des factures en B2C ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -199,7 +199,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_17, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous un logiciel de caisse ?');
+        $question->setLibelle('Avez-vous un logiciel de caisse ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -207,7 +207,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_18, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous soumis à la TVA sur les encaissements ?');
+        $question->setLibelle('Etes-vous soumis à la TVA sur les encaissements ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -215,7 +215,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_19, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous soumis à la déclaration de prorata de TVA, de TVA sur marge ?');
+        $question->setLibelle('Etes-vous soumis à la déclaration de prorata de TVA, de TVA sur marge ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -223,7 +223,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_20, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous mis en place un mécanisme de calcul de l\'auto-liquidation de TVA ?');
+        $question->setLibelle('Avez-vous mis en place un mécanisme de calcul de l\'auto-liquidation de TVA ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -231,7 +231,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_21, $question);
 
         $question = new Questions();
-        $question->setIntitule('Facturez-vous (hors de France) en Europe ?');
+        $question->setLibelle('Facturez-vous (hors de France) en Europe ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -239,7 +239,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_22, $question);
 
         $question = new Questions();
-        $question->setIntitule('Facturez-vous (hors de France) à l\'international ?');
+        $question->setLibelle('Facturez-vous (hors de France) à l\'international ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -247,7 +247,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_23, $question);
 
         $question = new Questions();
-        $question->setIntitule('Emettez-vous des factures en mandat de facturation ? (pour le compte de …)');
+        $question->setLibelle('Emettez-vous des factures en mandat de facturation ? (pour le compte de …)');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -255,7 +255,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_24, $question);
 
         $question = new Questions();
-        $question->setIntitule('Faites vous appel à un factor ?');
+        $question->setLibelle('Faites vous appel à un factor ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -263,7 +263,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_25, $question);
 
         $question = new Questions();
-        $question->setIntitule('L\'intégralité de votre base clients dispose-t-elle du SIRET ?');
+        $question->setLibelle('L\'intégralité de votre base clients dispose-t-elle du SIRET ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -271,7 +271,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_26, $question);
 
         $question = new Questions();
-        $question->setIntitule('L\'intégralité de votre base clients dispose-t-elle d\'un numero de TVA intracommunautaire ?');
+        $question->setLibelle('L\'intégralité de votre base clients dispose-t-elle d\'un numero de TVA intracommunautaire ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -279,7 +279,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_27, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous une base de données d\'articles vendus (produits / services) ?');
+        $question->setLibelle('Avez-vous une base de données d\'articles vendus (produits / services) ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -287,7 +287,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_28, $question);
 
         $question = new Questions();
-        $question->setIntitule('Vous arrive-t-il de réémettre des factures (avec le même numéro) suite à un rejet du client / ou une erreur interne ?');
+        $question->setLibelle('Vous arrive-t-il de réémettre des factures (avec le même numéro) suite à un rejet du client / ou une erreur interne ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::CLIENTS));
@@ -295,7 +295,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_29, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous mis en place une base fournisseurs ?');
+        $question->setLibelle('Avez-vous mis en place une base fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -303,7 +303,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_30, $question);
 
         $question = new Questions();
-        $question->setIntitule('L\'intégralité de votre base fournisseurs dispose-t-elle du SIRET ?');
+        $question->setLibelle('L\'intégralité de votre base fournisseurs dispose-t-elle du SIRET ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -311,7 +311,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_31, $question);
 
         $question = new Questions();
-        $question->setIntitule('L\'intégralité de votre base fournisseurs dispose-t-elle d\'un numero de TVA intracommunautaire ?');
+        $question->setLibelle('L\'intégralité de votre base fournisseurs dispose-t-elle d\'un numero de TVA intracommunautaire ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -319,7 +319,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_32, $question);
 
         $question = new Questions();
-        $question->setIntitule('Gérez-vous une base de contrats fournisseurs ?');
+        $question->setLibelle('Gérez-vous une base de contrats fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -327,7 +327,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_33, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous mis en place un circuit de gestion des commandes fournisseurs ?');
+        $question->setLibelle('Avez-vous mis en place un circuit de gestion des commandes fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -335,7 +335,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_34, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous amenés à payer des acomptes fournisseurs ?');
+        $question->setLibelle('Etes-vous amenés à payer des acomptes fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -343,7 +343,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_35, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous un processus de validation des factures fournisseur ?');
+        $question->setLibelle('Avez-vous un processus de validation des factures fournisseur ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -351,7 +351,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_36, $question);
 
         $question = new Questions();
-        $question->setIntitule('Etes-vous équipé d\'un outil de numérisation des factures (type OCR) ?');
+        $question->setLibelle('Etes-vous équipé d\'un outil de numérisation des factures (type OCR) ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -359,7 +359,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_37, $question);
 
         $question = new Questions();
-        $question->setIntitule('Qui gère les règlements ? (En interne / l\'expert comptable)');
+        $question->setLibelle('Qui gère les règlements ? (En interne / l\'expert comptable)');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE2));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -367,7 +367,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_38, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous un processus de remboursement des Notes de Frais ?');
+        $question->setLibelle('Avez-vous un processus de remboursement des Notes de Frais ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -375,7 +375,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_39, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous mis en place des délais de règlements fournisseurs ?');
+        $question->setLibelle('Avez-vous mis en place des délais de règlements fournisseurs ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::FOURNISSEURS));
@@ -383,7 +383,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_40, $question);
 
         $question = new Questions();
-        $question->setIntitule('A quelle échéance pensez-vous traiter cette obligation règlementaire ? (Q2, Q3, Q4)');
+        $question->setLibelle('A quelle échéance pensez-vous traiter cette obligation règlementaire ? (Q2, Q3, Q4)');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE2));
         $question->setCategorie($this->getReference(CategorieFixtures::PROJET));
@@ -391,7 +391,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_41, $question);
 
         $question = new Questions();
-        $question->setIntitule('Quelle durée pensez-vous nécessaire à la réalisation de ce projet ? (1, 2, 3, 6 mois)');
+        $question->setLibelle('Quelle durée pensez-vous nécessaire à la réalisation de ce projet ? (1, 2, 3, 6 mois)');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE2));
         $question->setCategorie($this->getReference(CategorieFixtures::PROJET));
@@ -399,7 +399,7 @@ class QuestionsFixtures extends Fixture implements DependentFixtureInterface
         $this->addReference(self::QUESTION_42, $question);
 
         $question = new Questions();
-        $question->setIntitule('Avez-vous une idée du budget à allouer à ce projet ?');
+        $question->setLibelle('Avez-vous une idée du budget à allouer à ce projet ?');
         $question->setQuiz($this->getReference(QuizFixtures::QUIZ1));
         $question->setType($this->getReference(TypeFixtures::TYPE1));
         $question->setCategorie($this->getReference(CategorieFixtures::PROJET));

@@ -14,15 +14,15 @@ class Questions
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups('quiz')]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
     #[Groups('quiz')]
-    private ?string $intitule = null;
+    private ?string $libelle = null;
 
     #[ORM\ManyToOne(inversedBy: 'questions')]
     #[ORM\JoinColumn(nullable: false)]
-    #[Groups('quiz')]
     private ?Quiz $quiz = null;
 
     #[ORM\OneToMany(mappedBy: 'question', targetEntity: Reponses::class, orphanRemoval: true)]
@@ -48,14 +48,14 @@ class Questions
         return $this->id;
     }
 
-    public function getIntitule(): ?string
+    public function getLibelle(): ?string
     {
-        return $this->intitule;
+        return $this->libelle;
     }
 
-    public function setIntitule(string $intitule): self
+    public function setLibelle(string $libelle): self
     {
-        $this->intitule = $intitule;
+        $this->libelle = $libelle;
 
         return $this;
     }
